@@ -12,8 +12,8 @@ newmtl Bottle
 	Kd 1.000000 1.000000 1.000000
 	Ks 0.252000 0.252000 0.252000
 	Ke 0.000000 0.000000 0.000000
-	map_Ka  BottleCompleteMap.tga
-	map_Kd  BottleCompleteMap.tga
+	map_Ka  BottleCompleteMap.jpg
+	map_Kd  BottleCompleteMap.jpg
 
 newmtl Cap
 	Ns 0.000000
@@ -26,5 +26,5 @@ newmtl Cap
 	Kd 1.000000 1.000000 1.000000
 	Ks 0.000000 0.000000 0.000000
 	Ke 0.000000 0.000000 0.000000
-	map_Ka CapCompleteMap.tga
-	map_Kd CapCompleteMap.tga
+	map_Ka CapCompleteMap.jpg
+	map_Kd CapCompleteMap.jpg
