@@ -56,15 +56,21 @@
 	<!-- Notice that we have added a new detectionMode parameters and also a matrixCodeType one. -->
 	<!-- MatrixCodeType is 3x3 because we have created a 3x3 marker before using the online tool  -->
         <!-- <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'> -->
-        <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+       
+	 
+	
+	
+	
+	<a-scene artoolkit embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
-		 <a-marker preset='custom' type='pattern' url='https://mhussar.github.io/pattern-not.patt'>
-			 <!-- <a-box position='0 0.5 0' color="red"></a-box> -->
+		 <a-marker-camera preset='custom' type='pattern' url='https://mhussar.github.io/pattern-not.patt'>
+			 
 			 <a-entity autoscale=".75" gltf-model="https://mhussar.github.io/bott.gltf"></a-entity>
-		 </a-marker>
+		         <a-entity id='camera1' camera='near:0.0001; far:500000; fov:80;' arjs-look-controls='smoothingFactor: 0.05' gps-projected-camera='gpsMinDistance: 5'> </a-entity>
+		 <a-marker-camera>
 
 		 <a-entity light="type: point; intensity:100.0 ; distance: 30; decay: 3"  position="0 0 20"></a-entity>
-                 <a-entity id='camera1' camera='near:0.0001; far:500000; fov:80;' arjs-look-controls='smoothingFactor: 0.05' gps-projected-camera='gpsMinDistance: 5'> </a-entity>
+                
        </a-scene>
 </body>
 </html>
