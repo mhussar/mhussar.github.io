@@ -135,8 +135,11 @@ function initialize()
 				.load( 'VanillaBottle.obj', function ( group ) {
 					mesh0 = group.children[0];
 					mesh0.material.side = THREE.DoubleSide;
+					mesh0.material.lightMap = null;
+					mesh0.material.lightMapIntensity = 1.0;
+				
 					mesh0.position.y = 0.25;
-					mesh0.scale.set(50,50,50);
+					mesh0.scale.set(25,25,25);
 					markerRoot1.add(mesh0);
 				}, onProgress, onError );
 		});
